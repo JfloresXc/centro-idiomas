@@ -1,5 +1,5 @@
-import app from "./config/server"
-import dotenv from "dotenv"
+const app = require("./dist/config/server")
+const dotenv = require("dotenv")
 
 dotenv.config()
 
