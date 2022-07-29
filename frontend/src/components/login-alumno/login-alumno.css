@@ -1,0 +1,34 @@
+.login-alumno{
+    min-height: 51.875em;
+    padding: 90px var(--margin-w);
+    background: var(--color-turquoise-100);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1.25em;
+}
+
+.login-alumno__content{
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+}
+
+.login-alumno__title{
+    font-size: var(--font-lead-1);
+    font-weight: 500;
+}
+
+.login-alumno__message{
+    font-size: var(--font-h5);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+    .login-alumno{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}

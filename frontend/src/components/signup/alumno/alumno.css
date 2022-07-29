@@ -1,0 +1,5 @@
+.signup-alumno{
+    min-height: 51.875em;
+    padding: 5.625em var(--margin-w);
+    background: var(--color-gray-600);
+}

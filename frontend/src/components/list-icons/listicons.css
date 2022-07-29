@@ -1,0 +1,55 @@
+.list-icons {
+	width: 100%;
+	max-width: 10.625em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.list-icons__circle {
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background: var(--color-gray-600);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.list-icons__button {
+	border: none;
+	background: transparent;
+}
+
+.list-icons__icon {
+	font-size: 1.2em;
+	color: var(--color-gray-700);
+	justify-self: center;
+	align-self: center;
+}
+
+.list-icons__icon:hover {
+	font-size: 1.4em;
+}
+
+/* Modifiers */
+.list-icons__small {
+	max-width: 9em;
+}
+
+.list-icons__small .list-icons__circle {
+	width: 1.5em;
+	height: 1.5em;
+	background: var(--color-gray-800);
+}
+
+.list-icons__small .list-icons__icon {
+	font-size: 0.8em;
+	color: var(--color-white);
+}
+
+.list-icons__small .list-icons__icon:hover {
+	font-size: 1em;
+}

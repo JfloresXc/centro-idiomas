@@ -1,0 +1,132 @@
+.footer,
+.footer__down,
+.footer__list,
+.footer__list-item-description,
+.footer__brand{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__down,
+.footer{
+    justify-content: space-between;
+}
+
+.footer__heading6,
+.footer__brand-heading,
+.footer__description,
+.footer__list-item-description,
+.footer__link,
+.footer__duties{
+    color: var(--color-gray-300);
+    font-size: var(--font-body-2);
+    font-weight: 400;
+}
+
+.footer__brand,
+.footer__heading6 ,
+.footer__description,
+.footer__list-item,
+.footer__list-item-description{
+    margin-bottom: 1.5em;
+}
+
+.footer__description,
+.footer__list-item-description{
+    max-width: 15.9375em;
+    line-height: var(--line-h-text);
+}
+
+.footer__heading6,
+.footer__brand-heading{
+    font-size: var(--font-h6);
+    font-weight: 500;
+    padding-bottom: 0.625em;
+}
+
+.footer{
+    min-height: 29.4375em;
+    background: var(--color-black-900);
+    padding: 6em var(--margin-w) 1.625em var(--margin-w);
+    flex-direction: column;
+}
+.footer__up{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px ,1fr));
+    gap: 0.625em;
+    box-shadow: 0px 1px 0px var(--color-turquoise);
+}
+
+.footer__down{
+    padding-top: .8em;
+}
+
+.footer__heading6{
+    border-bottom: 1px solid var(--color-turquoise);
+}
+
+.footer__list{
+    flex-direction: column;
+    width: 100%;
+    max-width: 15.9375em;
+}
+
+.footer__list-item-description i{
+    line-height: var(--line-h-text);
+}
+
+.footer__list-item-description p{
+    margin-left: 1em;
+}
+
+.footer__joke{
+    font-family: 'Nanum Pen Script', cursive;
+    color: var(--color-turquoise);
+    font-size: var(--font-h6);
+}
+
+.footer__link:hover{
+    color: var(--color-white);
+    box-shadow: 0px 1px 0px var(--color-white);
+    padding: 10px 0;
+}
+
+/* Modifiers */
+.footer__list-row{
+    width: 100%;
+    max-width: 411px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mediaqueries */
+@media screen and (max-width: 560px){
+    .footer{
+        min-height: fit-content;
+        text-align: center;
+    }
+    .footer__list{
+        max-width: none;
+        align-items: center;
+        margin-bottom: 0.9375em;
+    }
+    ul.footer__list{
+        display: none;
+    }
+    .footer__down{
+        justify-content: center;
+    }
+}
+
+/* @media screen and (max-width: 410px){
+    .footer__up{
+        margin: auto;
+    }
+    .footer__heading6{
+        padding: 0.625em;
+    }
+    .footer__list-row{
+        flex-direction: column;
+    }
+} */

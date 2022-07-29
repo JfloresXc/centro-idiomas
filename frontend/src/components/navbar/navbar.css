@@ -1,0 +1,149 @@
+.navbar,
+.navbar__list-up,
+.navbar__brand {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.navbar__checkbox-hide,
+.navbar__label-hide {
+	display: none;
+}
+
+.navbar {
+	box-shadow: 0px 1px 0px #e5e9f2;
+	transition: all ease 1s;
+}
+
+.navbar__brand {
+	justify-content: flex-start;
+	align-items: center;
+	line-height: 1.25em;
+}
+
+.navbar__list-up {
+	justify-content: flex-end;
+}
+
+.navbar__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 3em;
+}
+
+.navbar__list-item {
+	max-width: 6em;
+	text-align: center;
+}
+
+.navbar__link {
+	cursor: pointer;
+	font-weight: 500;
+	font-size: var(--font-body-2);
+	line-height: var(--font-body-2);
+	color: #18191f;
+}
+
+.navbar__link-brand {
+	font-weight: 700;
+}
+
+/* Modifiers */
+.navbar-sign {
+	padding: 1em var(--margin-w);
+	background: var(--color-gray-500);
+}
+
+.navbar-sign .navbar__list-up {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar-light {
+	padding: 1.375em var(--margin-w);
+	background: var(--color-white);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.navbar-light .navbar__list-up {
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.navbar-light .navbar__list-item:hover {
+	opacity: 0.8;
+}
+
+.navbar-light .active:not(.navbar__link-brand) {
+	color: var(--color-purple);
+}
+
+/* MEDIAQUERIES */
+@media screen and (max-width: 800px) {
+	.navbar {
+		flex-direction: column-reverse;
+		padding: 0;
+	}
+
+	.navbar__list-up {
+		justify-content: space-between;
+		padding: 1em var(--margin-w);
+	}
+
+	.navbar__list-down {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar__list {
+		gap: 0;
+	}
+
+	.navbar__list-item {
+		min-width: 100%;
+	}
+
+	.navbar__link {
+		display: block;
+		font-size: var(--font-h6);
+		color: var(--color-gray-900);
+		padding: 1em;
+		height: 100%;
+	}
+
+	.navbar__label-hide {
+		display: block;
+		cursor: pointer;
+	}
+
+	.navbar__label-hide i {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		color: var(--color-gray-800);
+	}
+
+	.navbar__list-down-visible {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	/* MODIFIERS */
+	.navbar-light {
+		flex-direction: column;
+	}
+
+	.navbar-light .navbar__list-up {
+		justify-content: space-between;
+	}
+
+	.navbar-light .navbar__list-item:hover {
+		opacity: 1;
+		background: var(--color-gray-500);
+	}
+}

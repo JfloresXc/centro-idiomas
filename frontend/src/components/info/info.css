@@ -1,0 +1,27 @@
+.info {
+	min-height: 100vh;
+	width: 100%;
+	padding: 5em var(--margin-w);
+	background: var(--color-gray-900);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 1.25em;
+}
+
+.info__message {
+	width: 100%;
+	max-width: 9em;
+	color: var(--color-white);
+	font-size: var(--font-h3);
+	line-height: var(--font-h4);
+}
+
+/* MEDIAQUERIES */
+@media screen and (max-width: 800px) {
+	.info {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+	}
+}

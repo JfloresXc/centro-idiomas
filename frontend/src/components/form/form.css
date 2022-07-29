@@ -1,0 +1,70 @@
+.form__title {
+	/* color: var(--color-gray-500); */
+	/* font-size: var(--font-h2); */
+	font-size: var(--font-h6);
+	font-weight: 600;
+	text-align: center;
+	width: 100%;
+	margin: 1em 0;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.form__button-submit {
+	align-self: flex-end;
+}
+
+.form__question {
+	text-decoration: none;
+	font-size: var(--font-label-small);
+	color: var(--color-gray-500);
+}
+
+/* MODIFIERS */
+#form__wrap-login,
+#form__wrap-signup {
+	width: 100%;
+	max-width: 30em;
+	min-height: 35rem;
+	padding: 2.5em 1.875em;
+	background: var(--color-black-900);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#form__wrap-signup {
+	width: 100%;
+	max-width: none;
+	padding: 2.5em;
+}
+
+#form__wrap-signup .form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px 40px;
+}
+
+#form__wrap-signup .form__button-submit {
+	grid-column: 1/3;
+}
+
+#form__wrap-contact {
+	padding: 2em;
+	background: var(--color-white);
+	gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.login-alumno {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+	}
+}

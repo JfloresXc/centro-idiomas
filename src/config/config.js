@@ -1,0 +1,1 @@
+export const SECRET_KEY = 'Me hubiese gustado que conmigo te luzcas'

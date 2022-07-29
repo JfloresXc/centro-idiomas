@@ -1,0 +1,41 @@
+:root {
+	--h-figure: 75%;
+	--w-figure: 25%;
+}
+
+.logo__list-item-1,
+.logo__list-item-3 {
+	width: var(--w-figure);
+	height: var(--h-figure);
+}
+
+.logo__list-item-2,
+.logo__list-item-4 {
+	width: var(--h-figure);
+	height: var(--w-figure);
+}
+
+.logo {
+	height: 1.25em;
+	min-width: 2em;
+	position: relative;
+	margin-right: 0.625em;
+}
+
+.logo__list-item {
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	position: absolute;
+}
+
+.logo__list-item-2 {
+	bottom: 0;
+	left: 0;
+	background: var(--color-turquoise);
+}
+
+.logo__list-item-4 {
+	top: 0;
+	right: 0;
+	background: var(--color-purple);
+}
