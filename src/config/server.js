@@ -39,4 +39,4 @@ app.get("/", (req, res) => {
 	res.render("index.html")
 })
 
-export default app
+module.exports = app
